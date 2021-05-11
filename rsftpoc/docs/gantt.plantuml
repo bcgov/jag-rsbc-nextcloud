@@ -1,0 +1,17 @@
+@startuml
+hide footbox
+skinparam actorStyle awesome
+skinparam handwrittern true
+
+actor "Police Member" as police
+
+participant "Police Nextcloud" as pn
+participant "RoadSafety Nextcloud" as rn
+participant "Corporate Storage (S3)" as s3
+participant DPS as dps
+
+police -> pn: [1] create impountment pacakge
+
+actor "Road Safety Clerk" as clerk
+
+@enduml

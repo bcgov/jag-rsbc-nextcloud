@@ -1,0 +1,88 @@
+@startgantt
+hide footbox
+printscale daily
+saturday are closed
+sunday are closed
+title Secure File Transfer Technical Theory POC Gantt Chart
+Project starts 2021-02-05
+-- Key Milestones --
+[Start of POC] happens at 2021-02-05
+[End of POC] happens at 2021-03-31
+-- Common Stack --
+[Setup NC] is colored in GreenYellow/Green
+[Setup NC] starts at 2021-02-05
+[Setup NC] ends at 2021-02-10
+[Setup NC] -> [Build Form v1]
+[Build Form v1] ends at 2021-02-19
+note bottom
+'note left
+Form v1 function
+- (done) CRUD impoundment form
+    - file upload
+    - no form validation
+- Save form to NextCloud folder
+end note
+[Build Form v1] is colored in Yellow/GoldenRod
+[Build Form v1] is 80% completed
+[Build Form v1] -> [Setup Keycloak_NC]
+[Setup Keycloak_NC] lasts 2 days
+[Setup Keycloak_NC] is 50% completed
+[Setup Keycloak_NC] is colored in Yellow/GoldenRod
+
+-- Option A (Nextcloud instances with federated cloud sharing) --
+[Setup Keycloak_NC] -> [Do A]
+[Do A] lasts 1 week
+[Do A] is colored in White/Black
+note bottom
+'note left
+Partner
+- Vic PD
+end note
+-- Option B (RSBC Nextcloud + Verifiable Credentials) --
+[Setup Keycloak_NC] -> [Setup VC]
+[Setup VC] lasts 2 weeks
+[Setup VC] is colored in White/Black
+[Setup VC] -> [Do B]
+[Do B] lasts 1 week
+[Do B] is colored in White/Black
+-- Option C (RSBC Nextcloud + Azure AD identity brokering) --
+[Setup Keycloak_NC] -> [Setup Keycloak_Azure AD]
+[Setup Keycloak_Azure AD] is colored in GreenYellow/Green
+[Setup Keycloak_Azure AD] lasts 2 days
+[Setup Keycloak_Azure AD] -> [Do C]
+[Do C] lasts 2 weeks
+[Do C] is colored in White/Black
+note bottom
+'note left
+Partner
+- Sannich PD
+end note
+-- Option D (Nextcloud + BCeID identity brokering) --
+[Setup Keycloak_NC] -> [Setup Keycloak_IDIR]
+[Setup Keycloak_IDIR] is colored in GreenYellow/Green
+[Setup Keycloak_IDIR] -> [Do D]
+[Do D] lasts 2 weeks
+[Do D] is colored in White/Black
+-- Option E (Nextcloud + IDIR identity brokering) --
+[Setup Keycloak_NC] -> [Setup Keycloak_BCeID]
+[Setup Keycloak_BCeID] lasts 2 days
+[Setup Keycloak_BCeID] is colored in White/Black
+[Setup Keycloak_BCeID] -> [Do E]
+[Do E] lasts 2 weeks
+[Do E] is colored in White/Black
+note bottom
+'note left
+on hold
+end note
+-- Option F (Trusted certificates) --
+[Setup Keycloak_NC] -> [Do F]
+[Do F] lasts 2 weeks
+note bottom
+'note left
+on hold
+end note
+-- Option G (RSBC Hub API + Verifiable credentials) --
+[Setup Keycloak_NC] -> [Do G]
+[Do G] lasts 2 weeks
+[Do G] is colored in White/Black
+@endgantt
