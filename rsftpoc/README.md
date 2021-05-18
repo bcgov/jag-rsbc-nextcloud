@@ -4,9 +4,11 @@
 [![Node GitHub Action](https://github.com/nextcloud/app-tutorial/workflows/Node/badge.svg)](https://github.com/nextcloud/app-tutorial/actions?query=workflow%3ANode)
 [![Lint GitHub Action](https://github.com/nextcloud/app-tutorial/workflows/Lint/badge.svg)](https://github.com/nextcloud/app-tutorial/actions?query=workflow%3ALint)
 
-This is the [RoadSafetyBC Secure File Transfer Proof-of-concept (RSFTPOC) app.  ](https://docs.nextcloud.com/server/latest/developer_manual/app_development/tutorial.html)
+This is the RoadSafetyBC Secure File Transfer Proof-of-concept (RSFTPOC) app.
  
 ## Run it locally
+
+To run RSFTPOC app locally, follow the  steps below:
 
 1. Set up your local instance of Nextcloud (version v20), following the Nextcloud install instructions.
 
