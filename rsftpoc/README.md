@@ -4,7 +4,7 @@
 [![Node GitHub Action](https://github.com/nextcloud/app-tutorial/workflows/Node/badge.svg)](https://github.com/nextcloud/app-tutorial/actions?query=workflow%3ANode)
 [![Lint GitHub Action](https://github.com/nextcloud/app-tutorial/workflows/Lint/badge.svg)](https://github.com/nextcloud/app-tutorial/actions?query=workflow%3ALint)
 
-This is the [RoadSafetyBC Secure File Transfer Proof-of-concept (RSFTPOC) app.  ](https://docs.nextcloud.com/server/latest/developer_manual/app_development/tutorial.html) which shows how to develop a very simple notes app.
+This is the [RoadSafetyBC Secure File Transfer Proof-of-concept (RSFTPOC) app.  ](https://docs.nextcloud.com/server/latest/developer_manual/app_development/tutorial.html)
  
 ## Run it locally
 
