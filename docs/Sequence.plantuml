@@ -1,0 +1,25 @@
+@startuml
+actor member as "Police Member"
+participant app as "RSFT POC (App)"
+participant dev as "RSFTDev (Nextcloud)"
+participant test as "RSFTTest (Nextcloud)"
+participant job as "Cronjob"
+participant s3 as "S3 Storage"
+participant sftp as "SFTP (DPS)"
+participant dps as "DPS"
+
+member -> app: Upload impoundment form
+app -> dev: Move form to shared folder
+dev -> test: Nextcloud to Nextcloud cloud share
+loop periodic processing
+    job -> test: Check for new uploads
+    job -> s3: Move received files to S3
+    job -> sftp: Transform and upload files to DPS
+end
+
+loop periodic processing
+    dps -> sftp: process uploaded files
+end
+
+hide footbox
+@enduml

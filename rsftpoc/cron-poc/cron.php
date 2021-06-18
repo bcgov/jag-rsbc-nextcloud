@@ -84,12 +84,12 @@ try {
     //     - Move '/Storage/DPS Ready/$uniqid (package name)' to '/Storage/DPS Sent'
 	try {
 		// DEV DPS
-		$DPSserver = 'DEXTROSE';
-		$DPSpasswd = 'Ks502kSKs502kS';
+		$DPSserver = 'not set';
+		$DPSpasswd = 'not set';
 
 		// TEST DPS
-		// $DPSserver = 'PASTRY'; -- test
-		// $DPSpasswd = 'K0f@X-T-G0dQ@W#E'; -- test
+		// $DPSserver = 'not set'; -- test
+		// $DPSpasswd = 'not set'; -- test
 
 		$user = 'keycloak-a5bb4bda-427b-4efc-9d48-c102fc285b74';
 		$userFolder = \OC::$server->getUserFolder($user);
